@@ -64,7 +64,7 @@ def main():
             resultFileName = f"{fileNameStem}.txt"
 
             with st.spinner("Loading model..."):
-                load_whisper_model(modelName)
+                model = load_whisper_model(modelName)
             st.success(f"Model {modelName} loaded successfully", icon="✅")
 
             with st.spinner("Saving file..."):
