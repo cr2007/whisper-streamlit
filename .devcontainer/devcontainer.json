@@ -1,0 +1,27 @@
+{
+    "name": "Whisper Streamlit Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/python:3",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "njpwerner.autodocstring",
+                "GitHub.copilot",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "eamodio.gitlens",
+                "aaron-bond.better-comments",
+                "rangav.vscode-thunder-client"
+            ]
+        }
+    },
+    "forwardPorts": [8501, 34065],
+    "portsAttributes": {
+        "8501": {
+            "label": "Streamlit"
+        },
+        "34065": {
+            "label": "Whisper"
+        }
+    },
+    "postCreateCommand": "pip --default-timeout=100 install --upgrade -U -r requirements.txt"
+}
