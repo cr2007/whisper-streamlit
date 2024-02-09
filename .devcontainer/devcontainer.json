@@ -17,7 +17,8 @@
     "forwardPorts": [8501, 34065],
     "portsAttributes": {
         "8501": {
-            "label": "Streamlit"
+            "label": "Streamlit",
+            "onAutoForward": "openBrowser"
         },
         "34065": {
             "label": "Whisper"
