@@ -24,5 +24,6 @@
             "label": "Whisper"
         }
     },
+    "updateContentCommand": "sudo apt-get update && sudo apt-get install -y ffmpeg",
     "postCreateCommand": "pip --default-timeout=100 install --upgrade -U -r requirements.txt"
 }
