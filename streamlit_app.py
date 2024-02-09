@@ -42,8 +42,8 @@ def main():
 
     modelName = st.selectbox(
         label="Select Model",
-        options=["base.en", "small.en", "medium.en", "large-v2"],
-        # index=1,
+        options=["tiny.en", "base.en", "small.en", "medium.en", "large-v2"],
+        index=1,
         help="Select the model to use for transcription",
     )
 
